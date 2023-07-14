@@ -1,0 +1,12 @@
+#wdp_button {
+    height: 100px;
+    font-size: larger;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+.project-image > img {
+    margin-left: -7px;
+}

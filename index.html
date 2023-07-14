@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:image" content="images/preview_image/preview_image.png" />
-    <meta property="og:description" content="I'm Sameer, a software developer, currently pursuing Bachelor of Technology from IIT Madras. This is my portfolio!" />
+    <meta property="og:description"
+        content="I'm Sameer, a software developer, currently pursuing Bachelor of Technology from IIT Madras. This is my portfolio!" />
     <meta property="og:url" content="https://dev-sameer.onrender.com/" />
     <meta property="og:title" content="Sameer's Portfolio" />
 
@@ -15,9 +16,11 @@
     <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/userstyles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -55,7 +58,9 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Sameer Verma</h1>
-            <h2>< Software Developer /></h2>
+            <h2>
+                < Software Developer />
+            </h2>
             <a href="#" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
@@ -108,20 +113,21 @@
                 <h3>Institute WebOps and MobOps, IIT Madras</h3>
                 <h4>Coordinator
                 </h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat
-                    laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
-                    libero. Morbi dapibus porta quam laoreet placerat.
+                <p style="text-align: left;">
+                    Responsible for coordinating the work with seven coordinators in completing projects &
+                    assignments. Completing the group tasks with seven project members while learning
+                    new technologies. Moreover, managing insti websites and organising backend web services for their
+                    backend activities.
                 </p>
             </div>
 
             <div data-date="June 2022 – Present">
                 <h3>International and Alumni Relations Student Council, IIT Madras</h3>
                 <h4>Manager</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat
-                    laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
-                    libero. Morbi dapibus porta quam laoreet placerat.
+                <p style="text-align: left;">
+                    Coordinating the work with seven people of Web-Operations in completing assignments with latest
+                    technologies. Worked on real-world projects & tasks after successful completion of assignments.
+                    Working on different IAR projects of other vertices for their requirements accordingly.
                 </p>
             </div>
 
@@ -136,9 +142,7 @@
             <span class="education-date">2021 - 2025</span>
             <h4>Bachelor of Naval Architechture and Ocean Engineering</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet
-                urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi
-                dapibus porta quam laoreet placerat.
+                <!-- paragraphs -->
             </p>
         </div>
         <!-- End .education-block -->
@@ -148,15 +152,7 @@
             <span class="education-date">2020 - 2021</span>
             <h4>IIT-JEE Advanced</h4>
             <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
+                <!-- ul -->
             </ul>
         </div>
         <!-- End .education-block -->
@@ -165,114 +161,134 @@
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
-        <div class="container">
+        <div class="container mt-3">
             <div class="row">
+                <button type="button" id="wdp_button" class="btn btn-outline-secondary btn-block"
+                    data-bs-toggle="collapse" data-bs-target="#demo">Web
+                    Development Projects <i class="fa fa-angle-double-down"></i></button>
+                <div id="demo" class="collapse">
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project_previews/viryaparamita.png" />
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="project shadow-large">
+                                <div class="project-image">
+                                    <img src="images/project_previews/viryaparamita.png" />
+                                </div>
+                                <!-- End .project-image -->
+                                <div class="project-info">
+                                    <h3>Vijay Paramita Website (Fullstack Project)</h3>
+                                    <p>
+                                        A fully functional website from frontend to backend. A web project collaborated
+                                        with
+                                        PVE,
+                                        published under marketing of Sindhuja-I. <br> <br>
+                                        <span style="font-weight: bolder;">Technologies</span><br>
+                                        HTML5 | Bootstrap5 | JavaScript | EJS View Engine| Node JS
+                                    </p>
+                                    <a target="_blank" href="https://viryaparamita.onrender.com">View Project</a>
+                                </div>
+                            </div>
+                            <!-- End .project-info -->
+
+                            <div class="project shadow-large">
+                                <div class="project-image">
+                                    <img src="images/project_previews/toDoList_v1.png" />
+                                </div>
+                                <!-- End .project-image -->
+                                <div class="project-info">
+                                    <h3>To-Do List (Backend Project)</h3>
+                                    <p>
+                                        This is a To Do List, a backend focused project with beautiful frontend. You
+                                        can add todo's
+                                        by clicking on '+' icon and mark them as completed as well. <br> <br>
+                                        <span style="font-weight: bolder;">Technologies</span><br>
+                                        HTML5 | Bootstrap5 | JavaScript | EJS View Engine| Node JS
+                                    </p>
+                                    <a target="_blank" href="https://todolist-v1-1d16.onrender.com">View Project</a>
+                                </div>
+                                <!-- End .project-info -->
+                            </div>
+                            <!-- End .project -->
+
+                            <div class="project shadow-large">
+                                <div class="project-image">
+                                    <img src="images/project_previews/newsletter_signup.png" />
+                                </div>
+                                <!-- End .project-image -->
+                                <div class="project-info">
+                                    <h3>Newsletter Signup (Backend Project)</h3>
+                                    <p>
+                                        A simple Newsletter-Signup page, backed by Mailchimp API. After signing up
+                                        successfully, you
+                                        will get redirected to success page. In case of any error, you will get
+                                        redirected to
+                                        failure page . <br> <br>
+                                        <span style="font-weight: bolder;">Technologies</span><br>
+                                        HTML5 | Bootstrap5 | JavaScript | API | Node JS | Mailchimp
+                                    </p>
+                                    <a target="_blank" href="https://newsletter-signup-wcqk.onrender.com">View
+                                        Project</a>
+                                </div>
+                                <!-- End .project-info -->
+                            </div>
+                            <!-- End .project -->
+
+
+                            <div class="project shadow-large">
+                                <div class="project-image">
+                                    <img src="images/project_previews/drum_kit_project.png" />
+                                </div>
+                                <!-- End .project-image -->
+                                <div class="project-info">
+                                    <h3>Drum Kit (Frontend Project)</h3>
+                                    <p>
+                                        A drum kit that allows the user to play a variety of sounds and rhythms. You
+                                        can either use
+                                        keyboard or clicks to interact with them. <br> <br>
+                                        <span style="font-weight: bolder;">Technologies</span><br>
+                                        HTML5 | CSS3 | JavaScript & DOM Manipulation
+
+                                    </p>
+                                    <a target="_blank"
+                                        href="https://sitama-from-iitm.github.io/Projects/Drum%20Kit/index.html">View
+                                        Project</a>
+                                </div>
+                                <!-- End .project-info -->
+                            </div>
+                            <!-- End .project -->
+
+                            <div class="project shadow-large">
+                                <div class="project-image">
+                                    <img src="images/project_previews/simon_game.png" />
+                                </div>
+                                <!-- End .project-image -->
+                                <div class="project-info">
+                                    <h3>Simon Game (Frontend Project)</h3>
+                                    <p>
+                                        This is a quite populer memory based game played with friends. You should
+                                        click on the
+                                        blinked colours in order to level up. <br> <br>
+                                        <span style="font-weight: bolder;">Technologies</span><br>
+                                        HTML5 | CSS3 | JavaScript(jQuery) & DOM Manipulation
+                                    </p>
+                                    <a target="_blank"
+                                        href="https://sitama-from-iitm.github.io/Projects/Simon%20Game/index.html">View
+                                        Project</a>
+                                </div>
+                                <!-- End .project-info -->
+                            </div>
+                            <!-- End .project -->
+
+                        </div>
                     </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Vijay Paramita Website (Fullstack Project)</h3>
-                        <p>
-                            A fully functional website from frontend to backend. A web project collaborated with PVE,
-                            published under marketing of Sindhuja-I. <br> <br>
-                            <span style="font-weight: bolder;">Technologies</span><br>
-                            HTML5 | Bootstrap5 | JavaScript | EJS View Engine| Node JS
-                        </p>
-                        <a target="_blank" href="https://viryaparamita.onrender.com">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
+
+
                 </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project_previews/toDoList_v1.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>To-Do List (Backend Project)</h3>
-                        <p>
-                            This is a To Do List, a backend focused project with beautiful frontend. You can add todo's
-                            by clicking on '+' icon and mark them as completed as well. <br> <br>
-                            <span style="font-weight: bolder;">Technologies</span><br>
-                            HTML5 | Bootstrap5 | JavaScript | EJS View Engine| Node JS
-                        </p>
-                        <a target="_blank" href="https://todolist-v1-1d16.onrender.com">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project_previews/newsletter_signup.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Newsletter Signup (Backend Project)</h3>
-                        <p>
-                            A simple Newsletter-Signup page, backed by Mailchimp API. After signing up successfully, you
-                            will get redirected to success page. In case of any error, you will get redirected to
-                            failure page . <br> <br>
-                            <span style="font-weight: bolder;">Technologies</span><br>
-                            HTML5 | Bootstrap5 | JavaScript | API | Node JS | Mailchimp
-                        </p>
-                        <a target="_blank" href="https://newsletter-signup-wcqk.onrender.com">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project_previews/drum_kit_project.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Drum Kit (Frontend Project)</h3>
-                        <p>
-                            A drum kit that allows the user to play a variety of sounds and rhythms. You can either use
-                            keyboard or clicks to interact with them. <br> <br>
-                            <span style="font-weight: bolder;">Technologies</span><br>
-                            HTML5 | CSS3 | JavaScript & DOM Manipulation
-
-                        </p>
-                        <a target="_blank" href="https://sitama-from-iitm.github.io/Projects/Drum%20Kit/index.html">View
-                            Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project_previews/simon_game.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Simon Game (Frontend Project)</h3>
-                        <p>
-                            This is a quite populer memory based game played with friends. You should click on the
-                            blinked colours in order to level up. <br> <br>
-                            <span style="font-weight: bolder;">Technologies</span><br>
-                            HTML5 | CSS3 | JavaScript(jQuery) & DOM Manipulation
-                        </p>
-                        <a target="_blank"
-                            href="https://sitama-from-iitm.github.io/Projects/Simon%20Game/index.html">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-
             </div>
         </div>
     </div>
-    <!-- End #projects -->
+
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
@@ -281,6 +297,22 @@
             <li>C++</li>
             <li>Python</li>
             <li>JavaScript</li>
+            <li>SQL</li>
+            <br>
+            <br>
+            <li>DOM Manipulation</li>
+            <li>Object Oriented Programming</li>
+            <li>Functional Programming</li>
+            <li>Dynamic Programming</li>
+            <br>
+            <br>
+            <li>Numpy</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Plotly</li>
+            <li>Cufflinks</li>
+            <li>Scikit-learn</li>
             <br>
             <br>
             <li>HTML5</li>
@@ -290,8 +322,7 @@
             <li>React</li>
             <li>React and Redux</li>
             <li>EJS</li>
-            <li>Node.js</li>
-            <li>SQL</li>
+            <li>Node & Express</li>
             <li>MongoDB and Mongoose</li>
             <br>
             <br>
@@ -334,7 +365,7 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/Sitama-from-IITM" target="_blank"><i class="fa fa-github"
+                            <a href="https://github.com/403errors" target="_blank"><i class="fa fa-github"
                                     aria-hidden="true"></i></a>
                         </li>
                         <!-- <li>
@@ -361,6 +392,7 @@
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
 
